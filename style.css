@@ -1,0 +1,101 @@
+body{
+    margin: 0em;
+    padding: 0em;
+    background-color: aquamarine;
+    background-color:rgba(13, 151, 43, 0.973);
+}
+nav{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    z-index: 2;
+    background-color:transparent;
+}
+img{
+    width: 40%;
+}
+ul{
+    display:flex;
+    list-style-type: none;
+    color: blueviolet;
+
+}
+li{
+    display: inline;
+    margin-right: 10px;
+    color:rgb(171, 255, 16);
+}
+button{
+    height: 40px;
+    width: 40px;
+    color:white; 
+    background-color:pink;
+    border:1px solid orange;
+    border-radius:50%;
+}
+video{
+    height:30%;
+    width: 100%;
+}
+
+
+#video{
+    position: relative;
+    z-index: 2;
+}
+#videotex{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin:0;
+    color:black   
+}
+
+
+.logo{
+   z-index: 0;
+}
+#offers{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    position: relative;
+    height: 250px;
+    background-color: brown;
+}
+#offers img{
+    min-width: 50%;
+    margin: 25%;
+}
+#offers h1{
+    text-align: center;
+    font-size: 12px;
+    color: cornflowerblue;
+}
+#offers p{
+    font-size: 8px;
+    color: cornsilk;
+}
+.slide{
+    height: 250px;
+    width: 100px;
+}
+.slide{
+    position: absolute;
+    top: -250px;
+    height: 250px;
+    background-color: cyan;
+    transition: all .5s;
+    /* z-index: -1; */
+}
+.yellow{
+    background-color: aquamarine;
+}
+.blue{
+    background-color: blue;
+}
+.logo:hover > .slide{
+    top: 0;
+    z-index: 1;
+}
